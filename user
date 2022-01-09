@@ -15,11 +15,10 @@ spec:
         app: user
     spec:
       containers:
-      - name: api-gateway
-        
-        # envFrom:
-        # - secretRef:
-        #     name: ai-gateway
+      - name: api-gateway 
+        envFrom:
+         - secretRef:
+             name: ai-gateway
         imagePullPolicy: Always
         image: hritikchaudhary/demo:user
         resources:
@@ -39,5 +38,5 @@ metadata:
 type: Opaque
 stringData:
     REDIS_DB_PORT : "6379"
-    REDIS_DB_URL = http://redis-master
-    MONGODB_DB_URL=mongodb://mongo:27017/users
+    REDIS_DB_URL : http://redis-master
+    MONGODB_DB_URL : mongodb://mongo:27017/users
