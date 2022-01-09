@@ -15,7 +15,7 @@ spec:
         app: user
     spec:
       containers:
-      - name: api-gateway 
+      - name: mysecret
         envFrom:
          - secretRef:
              name: ai-gateway
