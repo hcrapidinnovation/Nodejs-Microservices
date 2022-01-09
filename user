@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user
+  labels:
+    app: user
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user
+  template:
+    metadata:
+      labels:
+        app: user
+    spec:
+      containers:
+      - name: api-gateway
+        # envFrom:
+        # - secretRef:
+        #     name: ai-gateway
+        imagePullPolicy: Always
+        image: hritikchaudhary/demo:user
+        resources:
+          requests:
+            memory: 300Mi
+            cpu: 100m
+          limits:
+            memory: 1Gi
+            cpu: 600m
+   #   imagePullSecrets:
+    #  - name: user
