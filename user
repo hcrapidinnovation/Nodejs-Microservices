@@ -30,7 +30,7 @@ spec:
             cpu: 600m
    #   imagePullSecrets:
     #  - name: user
-----
+---
 apiVersion: v1
 kind: Secret
 metadata:
