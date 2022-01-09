@@ -18,7 +18,7 @@ spec:
       - name: order
         envFrom:
          - secretRef:
-             name: order
+             name: mysecret
         imagePullPolicy: Always
         image: hritikchaudhary/demo:order
         resources:
