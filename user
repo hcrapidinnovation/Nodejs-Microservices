@@ -15,10 +15,10 @@ spec:
         app: user
     spec:
       containers:
-      - name: mysecret
+      - name: user
         envFrom:
          - secretRef:
-             name: ai-gateway
+             name: mysecret
         imagePullPolicy: Always
         image: hritikchaudhary/demo:user
         resources:

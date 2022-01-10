@@ -18,7 +18,7 @@ spec:
       - name: mysecret
         envFrom:
          - secretRef:
-             name: product
+             name: mysecret
         imagePullPolicy: Always
         image: hritikchaudhary/demo:product
         resources:

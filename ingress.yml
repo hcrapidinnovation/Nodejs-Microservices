@@ -1,0 +1,50 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: api-svc
+  labels:
+    app: api-svc
+  annotations: 
+    # Ingress Core Settings
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/subnets: subnet-0c9b12868edbd4dcd,subnet-095fdba64663b6622 
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /getUserDetails/
+            pathType: Prefix
+            backend:
+              serviceName : usern
+              servicePort : 4000
+          - path: /register
+            pathType: Prefix
+            backend:
+              serviceName : usern
+              servicePort : 4000
+          - path: /login
+            pathType: Prefix
+            backend:
+              serviceName : usern
+              servicePort : 4000
+          - path: /product/
+            pathType: Prefix
+            backend:
+              serviceName : productn
+              servicePort : 3000
+          - path: /product
+            pathType: Prefix
+            backend:
+              serviceName : productn
+              servicePort : 3000
+          - path: /getUserDetails
+            pathType: Prefix
+            backend:
+              serviceName : ordern
+              servicePort : 2000
+          - path: /order
+            pathType: Prefix
+            backend:
+              serviceName : ordern
+              servicePort : 2000
