@@ -31,7 +31,7 @@ spec:
           - path: /product/
             pathType: Prefix
             backend:
-              serviceName : productn
+              serviceName : productn. 
               servicePort : 3000
           - path: /product
             pathType: Prefix
