@@ -1,4 +1,8 @@
-properties([pipelineTriggers([githubPush()])])
+pipeline {
+    triggers {
+      pullRequestReview(reviewStates: ['approved'])
+    }
+}
 properties([pipelineTriggers([gitHubPullRequestDiscovery()])])
 pipeline {
     agent any
