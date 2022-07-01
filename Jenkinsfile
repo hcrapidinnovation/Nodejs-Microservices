@@ -11,7 +11,7 @@ pipeline {
         
         stage('Testing') { 
             steps {
-                script {
+                script { 
                     sh 'echo "Testing"'
                 }
             } 
