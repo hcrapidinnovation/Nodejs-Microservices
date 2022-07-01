@@ -5,7 +5,7 @@ metadata:
   labels:
     app: api-svc
   annotations:  
-    # Ingress Core Settings 
+    # Ingress Core Settings  
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-fa cing
     alb.ingress.kubernetes.io/subnets: subnet-0c9b12868edbd4dcd,subnet-095fdba64663b6622 
