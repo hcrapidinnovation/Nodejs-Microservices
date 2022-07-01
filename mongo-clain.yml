@@ -8,6 +8,6 @@ spec:
   storageClassName: ssd
   accessModes:
     - ReadWriteOnce
-  resources:
+  resources:hf
     requests:
       storage: 1Gi
