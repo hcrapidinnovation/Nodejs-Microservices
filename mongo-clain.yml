@@ -5,7 +5,7 @@ metadata:
     io.kompose.service: mongo-claim
   name: mongo-claim
 spec:
-  storageClassName: ssd
+  storageClassName: ssdv
   accessModes:
     - ReadWriteOnce
   resources:hf
