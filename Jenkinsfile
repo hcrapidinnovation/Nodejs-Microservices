@@ -20,7 +20,7 @@ pipeline {
         stage("build"){
             when {
                 branch 'dev'
-                a
+                
             }
             
             steps{
