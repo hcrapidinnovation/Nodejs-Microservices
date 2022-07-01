@@ -6,7 +6,7 @@ spec:
   type: NodePort
   selector:
     app: order
-  ports:
+  ports: i
       # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
     - port: 2000
       targetPort: 2000
