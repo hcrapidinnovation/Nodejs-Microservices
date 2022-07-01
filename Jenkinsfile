@@ -1,3 +1,5 @@
+properties([pipelineTriggers([githubPush()])])
+properties([pipelineTriggers([githubPull()])])
 pipeline {
     agent any
     
