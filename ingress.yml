@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: api-svcV 
   labels:
-    app: api-svc
+    app: api-svc 
   annotations:  
     # Ingress Core Settings  
     kubernetes.io/ingress.class: alb
