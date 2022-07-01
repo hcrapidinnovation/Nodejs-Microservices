@@ -8,7 +8,7 @@ pipeline {
                 echo sh(returnStdout: true, script: 'env')
             }
         }
-        
+         
         stage('Testing') { 
             steps {
                 script { 
