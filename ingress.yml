@@ -4,7 +4,7 @@ metadata:
   name: api-svcV 
   labels:
     app: api-svc
-  annotations: 
+  annotations:  
     # Ingress Core Settings
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
